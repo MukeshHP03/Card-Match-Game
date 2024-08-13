@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5eaf5;
+}
+#board{
+    /* margin: 20px; */
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 10px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-radius: 10px;
+    /* background-color: grey; */
+    background-color: lightblue;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.card.flipped{
+    background-color: #fff;
+}
